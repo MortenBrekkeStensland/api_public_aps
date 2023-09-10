@@ -1,9 +1,9 @@
 ## APS API
 
 ### Protocol:
-APS has a TCP server that waits for a client connection on a default port (4778) and can be configured from the app settings. Once a connection is instantiated between the client and APS it will continuously listen to the incoming messages from that client.
+APS has a TCP server that waits for a client connection on a default port (4777) and can be configured from the app settings. Once a connection is instantiated between the client and APS it will continuously listen to the incoming messages from that client.
 The commands should be sent as an ASCII string with `$` as a termination char at
-the end of it (e.g. FireNext$).
+the end of it (e.g. Navigation_NextFS$).
 
 
 ### Commands:
