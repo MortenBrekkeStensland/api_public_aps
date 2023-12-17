@@ -73,10 +73,14 @@ Once the client is connected to APS it will continuously receive info. This will
    "data":{
       "curr": "02.pptx",
       "prev": "01.pptx",
-      "next":"-"
+      "next":"-",
+      "slide_number": "1",
+      "slides_count": "10",
+      "builds_count": "2"
    }
 }$
 ```
+> All of the above params should be sent, if one is not available, just send "-" as value.
 
 #### Images States Feedback
 ```JSON
