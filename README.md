@@ -19,17 +19,15 @@ the end of it (e.g. Navigation_NextFS$).
 7. `Key_Right` 
 8. `Key_Esc`
 9. `Key_B`
-10. `Capture`: Take a screenshot and save it to a bank, e.g. `Capture1`
-11. `Display`: Display an image, e.g. `Display1`
-12. `OpenStart_Presentation`: supported params 3
-13. `OpenStart_Presentation_Slot`: supported params 3
-14. `Generic`: Go to a specified slide (Generic)
-15. `Powerpoint_Go`: Go to a specified slide (PowerPoint)
-16. `Powerpoint_Previous`
-17. `Powerpoint_Next`
-18. `Acrobat_Go`: Go to a specified slide (Acrobat)
-19. `Acrobat_Previous`
-20. `Acrobat_Next`
+10. `OpenStart_Presentation`: supported params 3
+11. `OpenStart_Presentation_Slot`: supported params 3
+12. `Generic`: Go to a specified slide (Generic)
+13. `Powerpoint_Go`: Go to a specified slide (PowerPoint)
+14. `Powerpoint_Previous`
+15. `Powerpoint_Next`
+16. `Acrobat_Go`: Go to a specified slide (Acrobat)
+17. `Acrobat_Previous`
+18. `Acrobat_Next`
 ##### Presentations commands parameters: 
 Some commands can have up to 3 params separated by `^` like `OpenStart_Presentation`
 ##### Parameters order:
@@ -48,7 +46,9 @@ Some commands can have up to 3 params separated by `^` like `OpenStart_Presentat
 2. `DisplayTest`
 3. `Blackout`
 4. `ExitImages` 
-5. `states`
+5. `Capture`: Take a screenshot and save it to a bank, e.g. `Capture1`
+6. `Display`: Display an image, e.g. `Display1`
+7. `states`
 
 ---
 
