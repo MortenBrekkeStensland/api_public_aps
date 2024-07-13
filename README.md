@@ -30,7 +30,7 @@ Some commands can have up to 3 params separated by `^` like `OpenStart_Presentat
 
 ---
 #### Presentations slide commands
-1. `Key_Left`Invokes keyboard-stroke Key Left 
+1. `Key_Left` Invokes keyboard-stroke Key Left 
 2. `Key_Right` 
 3. `Key_Esc`
 4. `Key_B`
