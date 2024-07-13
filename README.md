@@ -9,25 +9,14 @@ the end of it (e.g. Navigation_NextFS$).
 
 ### Commands:
 
-#### Presentations commands
+#### Presentations file commands
 1. `Navigation_NextFS`: Open the next presentation using the focused app in fullscreen
 2. `Navigation_PrevFS`: Open prev presentation using the focused app in fullscreen
 3. `Navigation_NextNoFS`: Open the next presentation using the focused app
 4. `Navigation_CurrentFS`: Set current presentation in fullscreen
-5. `Navigation_CloseOthers`
-6. `Key_Left`
-7. `Key_Right` 
-8. `Key_Esc`
-9. `Key_B`
-10. `OpenStart_Presentation`: supported params 3
-11. `OpenStart_Presentation_Slot`: supported params 3
-12. `Generic`: Go to a specified slide (Generic)
-13. `Powerpoint_Go`: Go to a specified slide (PowerPoint)
-14. `Powerpoint_Previous`
-15. `Powerpoint_Next`
-16. `Acrobat_Go`: Go to a specified slide (Acrobat)
-17. `Acrobat_Previous`
-18. `Acrobat_Next`
+5. `OpenStart_Presentation`: supported params 3
+6. `OpenStart_Presentation_Slot`: supported params 3
+7. `Navigation_CloseOthers`
 ##### Presentations commands parameters: 
 Some commands can have up to 3 params separated by `^` like `OpenStart_Presentation`
 ##### Parameters order:
@@ -40,6 +29,22 @@ Some commands can have up to 3 params separated by `^` like `OpenStart_Presentat
 - `Powerpoint_Go^2` will open slide 2 of the currently opened PP presentation
 
 ---
+#### Presentations slide commands
+1. `Key_Left`Invokes keyboard-stroke Key Left 
+2. `Key_Right` 
+3. `Key_Esc`
+4. `Key_B`
+5. `Generic`: Go to a specified slide (Generic)
+6. `Powerpoint_Go`: Go to a specified slide (PowerPoint)
+7. `Powerpoint_Previous`
+8. `Powerpoint_Next`
+9. `Acrobat_Go`: Go to a specified slide (Adobe Acrobat DC Pro)
+10. `Acrobat_Previous`
+11. `Acrobat_Next`
+12. `Keynote_GO` Go to a specified slide (Keynote)
+13. `Keynote_Previous`
+14. `Keynote_Next`
+
 
 #### Images commands
 1. `Freeze`
