@@ -5,7 +5,7 @@ APS has a TCP server that waits for a client connection on a default port (31600
 The commands should be sent as an ASCII string with `$` as a termination char at
 the end of it (e.g. Navigation_NextFS$).
 
----
+
 
 ### Commands:
 
@@ -44,6 +44,8 @@ Some commands can have up to 3 params separated by `^` like `OpenStart_Presentat
 12. `Keynote_GO` Go to a specified slide (Keynote)
 13. `Keynote_Previous`
 14. `Keynote_Next`
+
+---
 
 
 #### Images commands
