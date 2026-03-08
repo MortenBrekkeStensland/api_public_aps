@@ -1,6 +1,36 @@
 ## v1 to v2 migration
 
-Starting from API v2, APS should use length-prefixed JSON messages for both sending and receiving data, instead of using $ as a termination character. This is the main protocol change, though a few command and feedback modifications were also made.
+> **Note:** API v1 support has been removed from current APS versions. Only API v2 (length-prefixed JSON messages) is supported.
+
+## Protocol overview
+
+APS uses length-prefixed JSON messages for both sending and receiving data. Each message is prefixed with a 4-byte big-endian integer indicating the length of the JSON payload.
+
+Clients can optionally send an API version message to indicate their supported version:
+
+```JSON
+{
+    "command": "api_version",
+    "api_version": 2
+}
+```
+
+If the `api_version` message is omitted, APS still expects API v2 communication. The version message is used for compatibility reporting between APS and the connected client.
+
+When a client connects, APS sends a message indicating its supported API version:
+
+```JSON
+{
+   "action": "api_version",
+   "api_version": 2
+}
+```
+
+To send a message:
+1. Serialize the JSON to UTF-8 bytes.
+2. Calculate the byte length.
+3. Send a 4-byte big-endian integer with the length.
+4. Send the JSON bytes.
 
 ### Commands
 
