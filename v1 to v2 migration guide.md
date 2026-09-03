@@ -34,6 +34,24 @@ To send a message:
 
 ### Commands
 
+#### Optional Windows clicker ownership addition
+
+`clicker_key_ownership` in `aps_info.data.capabilities` advertises the optional
+`SetClickerKeyOwnership` command and `clicker_key_ownership` acknowledgement.
+This is an additive API v2 extension, initially available in Windows development
+builds; it is not implemented by APS-Mac. Existing clients need no changes.
+
+Supporting clients declare exact namespaced keystrokes using a connection-owned
+lease, a fixed Windows boot-clock deadline, and matching acknowledgement. Normal
+changes use capture/drain/release phases to finish held presses. Missing
+acknowledgement stops dispatch while capture remains protected through the lease
+deadline. Disconnect/expiry can require a clearing tap for an uncertain held key.
+APS verifies the actual local TCP peer; `locality_proof` does not authorize the
+client. Do not send the command when the capability is absent. Hub disables
+overlapping navigation assignments in that case while allowing nonconflicting
+inputs. See [the complete v2 contract](v2.md#temporary-clicker-key-ownership-windows)
+for validation, reserved shortcuts, timing, feedback, and platform availability.
+
 #### Changed
 - Capture1, Capture2, ...\
     Renamed to Capture_Image accepts bank_number parameter
